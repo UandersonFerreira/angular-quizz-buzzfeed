@@ -4,6 +4,10 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
@@ -19,10 +23,7 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
@@ -31,3 +32,25 @@
     "strictTemplates": true
   }
 }
+
+/*
+  "resolveJsonModule": true ->
+  controla a capacidade de importar arquivos JSON
+  diretamente em seus módulos TypeScript.
+
+Exemplo com resolveJsonModule habilitado
+import dados from './dados.json'; // Importa o arquivo JSON
+console.log(dados.nome); // Acesso aos dados do JSON de forma tipada
+
+
+  "allowSyntheticDefaultImports": true,
+  -> é uma opção do TypeScript que controla a capacidade de importar módulos
+  TypeScript que usam a sintaxe de importação padrão ES6
+  (também chamada de "default import") em módulos que
+  não fornecem explicitamente um export padrão
+
+  // Exemplo com allowSyntheticDefaultImports habilitado
+import MyModule from './my-module'; // O TypeScript cria um export padrão sintético
+
+
+*/
