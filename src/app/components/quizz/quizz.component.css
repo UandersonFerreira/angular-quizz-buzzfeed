@@ -41,13 +41,14 @@
  justify-content: center;
  margin: auto;
  margin-bottom: 20px;
+
 }
 
 .btn-options{
   background-color: transparent;
   border: 1px solid #18AB29;
   border-radius: 8px;
-  width: 50%;
+  width: 45%;
   display: inline-block;
   cursor: pointer;
   color: white;
@@ -58,6 +59,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   text-shadow: 0px 1px 0px #2F6627;
+  margin: 10px;
 
 }
 
@@ -82,4 +84,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.quizz_results > p{
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+
+footer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin:15px 0px;
+
 }
